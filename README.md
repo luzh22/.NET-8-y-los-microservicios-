@@ -510,3 +510,24 @@ permitiendo una gran flexibilidad y escalabilidad en el desarrollo de aplicacion
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="568" height="373" alt="image" src="https://github.com/user-attachments/assets/a9420888-7a3f-485a-9dc6-cf56a4123720" />
+
+
+
+
