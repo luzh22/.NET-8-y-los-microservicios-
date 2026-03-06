@@ -528,6 +528,30 @@ permitiendo una gran flexibilidad y escalabilidad en el desarrollo de aplicacion
 
 <img width="568" height="373" alt="image" src="https://github.com/user-attachments/assets/a9420888-7a3f-485a-9dc6-cf56a4123720" />
 
+<img width="565" height="387" alt="image" src="https://github.com/user-attachments/assets/973e62cb-3eb6-4124-81f5-c8680ff087cd" />
+
+<img width="566" height="382" alt="image" src="https://github.com/user-attachments/assets/2df8d431-18a8-4c3e-b64d-f8e65b9e928d" />
+
+<img width="563" height="372" alt="image" src="https://github.com/user-attachments/assets/9e0fac7a-4026-4488-8f08-996e89600082" />
+
+<img width="1183" height="508" alt="image" src="https://github.com/user-attachments/assets/e554559e-b954-47b0-9e7a-ce371bf60e9a" />
+
+<img width="1149" height="570" alt="image" src="https://github.com/user-attachments/assets/d89a84c6-afb2-468e-a2cb-c6ea5dc00188" />
+<img width="1163" height="487" alt="image" src="https://github.com/user-attachments/assets/89a91a1f-5922-4b3f-85cb-5772bac896cb" />
+
+<img width="1088" height="515" alt="image" src="https://github.com/user-attachments/assets/2bbed6d2-9367-4b15-bd22-b6f182eaab32" />
+<img width="1166" height="391" alt="image" src="https://github.com/user-attachments/assets/ccfc0825-35a8-48c0-9870-a4ff8e77427b" />
+<img width="564" height="302" alt="image" src="https://github.com/user-attachments/assets/0b483ca1-473e-495f-aedc-a42d19a4c999" />
+<img width="567" height="373" alt="image" src="https://github.com/user-attachments/assets/d9f3d505-3d81-4f71-80f6-be30769692d7" />
+<img width="1114" height="310" alt="image" src="https://github.com/user-attachments/assets/5ab1502c-ccd3-4d8c-a8c4-813b378dc6b1" />
+<img width="1138" height="510" alt="image" src="https://github.com/user-attachments/assets/4f689c14-1521-4a83-9d4b-8d388d10e2af" />
+<img width="1087" height="415" alt="image" src="https://github.com/user-attachments/assets/8bb04f<img width="1090" height="420" alt="image" src="https://github.com/user-attachments/assets/0503a968-4621-4413-a6cc-c8ddf8d7f6cf" />
+e9-07ed-49f5-9f21-64d66a9631b8" />
+
+
+
+
+
 
 
 
