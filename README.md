@@ -154,7 +154,7 @@ complicado que en una arquitectura monolítica,
 debido a la distribución de componentes y la variedad de tecnologías utilizadas en diferentes microservicios.
 
 
-
+## no le pongas cuidado a estos  dos titulos de abajo que no tenia donde copiarlos ajjaja tons lo puse hay pero no le pongas cuidado mas bien lee de como crar una abstraccion 
 
 
 ## develop vertical slice feacture folder with CQRS  and mediatR
