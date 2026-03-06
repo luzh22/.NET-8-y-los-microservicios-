@@ -156,6 +156,9 @@ debido a la distribución de componentes y la variedad de tecnologías utilizada
 explica como desarrollar carpetas de caracteristicas de corte vertical con circulos y mediador 
 
 
+## create abstraction on MediatR for CQRS command and Query separation 
+explica como crear una abstraccion en mediador para el patron de diseño de valores 
+
 
 
 
