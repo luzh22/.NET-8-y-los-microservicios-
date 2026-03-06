@@ -2,6 +2,7 @@
 net 8 microservices : DDD, CQRS, vertical / clean architecture
 
 ## PRIMERO TOCA EMPEZAR CON CONSEPTOS BASICOS  ##
+## le toco leer hermano jaajaa entre mas texto mejorrrr lo voy a torturar
 
 ¿que es un microservicio?
 es una forma de construir un programa grande usando muchos programas pequeños 
@@ -38,6 +39,9 @@ en NET.8 hay muchas bibliotecas que ayudan a ; conectarse a base de datos, crear
 
 ## mejores practicas 
 son formas recomendadas para programar que elcodigo quede bien echo 
+
+
+## yo vere que si este leyendo por que le voy a hacer evaluacion 
 
 ## patrones de arquitectura de los microservicios 
 son formas recomendadas de organizar y hacer  funcionar los microservicios dentro de una aplicacion
@@ -126,6 +130,8 @@ Si un microservicio falla, los otros pueden seguir funcionando, minimizando el i
 estos ofrecen una forma de de desarrolllar aplicaciones que son mas rapidas de construir mas siples 
 de manteener y faciles de escalar 
 
+## si esta leyendo o le pegooooo 
+
 ## cuales son los distintos retos y desventajas de la arquitectura de los micoservicios que se deben considerar
 
 Complejidad Aumentada: A medida que se descompone una aplicación en múltiples microservicios, la complejidad de gestión también aumenta. 
@@ -158,6 +164,185 @@ explica como desarrollar carpetas de caracteristicas de corte vertical con circu
 
 ## create abstraction on MediatR for CQRS command and Query separation 
 explica como crear una abstraccion en mediador para el patron de diseño de valores 
+
+## patrones de servicio de la arquitectura de los microservicios 
+
+Patrón de Mediador: Este patrón se utiliza para facilitar la interacción entre objetos a través de un mediador,
+lo que reduce las dependencias directas y simplifica las comunicaciones, especialmente en cargas de trabajo complejas. 
+Es útil para evitar que los microservicios se conecten directamente entre sí, promoviendo un diseño más limpio.
+
+Inyección de Dependencias: Este patrón permite inyectar dependencias en lugar de codificarlas de forma rígida,
+lo que incrementa la mantenibilidad y la capacidad de prueba del código. En el contexto de microservicios, 
+esto ayuda a que cada servicio pueda gestionarse de manera más independiente.
+
+APIs Mínimas y Enrutamiento: En .NET 8, las API mínimas simplifican la definición de puntos finales, proporcionando
+una sintaxis ligera para el enrutamiento y el manejo de solicitudes HTTP. Esto permite crear servicios que son más fácil de entender y de implementar.
+
+Mappers de Objetos Relacionales (ORM): Estos patrones permiten abstraer las interacciones con la base de datos,
+facilitando el trabajo con objetos de base de datos a través de constructos de programación de alto nivel. 
+Ayuda a simplificar la manipulación de datos en los microservicios.
+
+## el dominio del comercio electronico 
+
+Listado de Productos:
+
+Caso de Uso: Como usuario, quiero listar productos para poder ver las opciones disponibles.
+Funcionalidad: El sistema debe mostrar una lista de productos disponibles en diversas categorías.
+Filtrado de Productos:
+
+Caso de Uso: Como usuario, quiero filtrar productos por marca y categoría.
+Funcionalidad: El usuario puede aplicar filtros para reducir la lista de productos a aquellos de su interés.
+Agregar Productos al Carrito:
+
+Caso de Uso: Como usuario, quiero poder agregar productos a mi carrito de compras.
+Funcionalidad: Permitir que los usuarios añadan productoss seleccionados a su carrito para posteriormente proceder al pago.
+Aplicar Cupones de Descuento:
+
+Caso de Uso: Como usuario, quiero poder aplicar cupones para obtener descuentos en mis compras.
+Funcionalidad: Validar y aplicar cupones que reduzcan el costo total de la compra.
+Checkout y Creación de Pedidos:
+
+Caso de Uso: Como usuario, quiero proceder al checkout para crear un pedido.
+Funcionalidad: Permitir que los usuarios revisen su carrito, especifiquen la dirección de entrega y realicen el pago.
+Historial de Pedidos:
+
+Caso de Uso: Como usuario, quiero ver mis pedidos anteriores y su historial.
+Funcionalidad: Proporcionar a los usuarios un registro de sus compras pasadas y el estado de los pedidos actuales.
+
+## analisis de requisitos funcionales 
+Entender el dominio del comercio electrónico implica también identificar los requisitos funcionales, como la gestión de inventario, 
+la confirmación de pedidos, y un sistema de inicio de sesión para usuarios. Identificar los sustantivos (como productos, categorías,
+y carritos de compra) y los verbos (como listar, agregar y comprar) ayuda a delinear el ámbito y las interacciones del sistema.
+
+
+
+
+##  en C# 12 naive 
+
+ se refiere a una serie de nuevas características que simplifican la escritura de código y mejoran la legibilidad y la eficiencia. 
+ Aquí hay un resumen de algunas de estas características:
+
+Constructores Primarios: Este concepto se ha expandido desde las clases de registros a las clases convencionales. Permite que 
+los parámetros de los constructores estén disponibles en el ámbito de toda la clase, lo que facilita el acceso a ellos sin
+necesidad de definir campos adicionales.
+
+Expresiones de Colección: Esta es una nueva adición que introduce una sintaxis más concisa para crear y manipular colecciones 
+comunes. Esto simplifica la forma en que se inicializan y manejan los valores de las colecciones, haciéndolo más intuitivo.
+
+Arreglos en Línea: Esta característica mejora el rendimiento al permitir que los desarrolladores creen arreglos de tamaño 
+fijo en tipos de estructura. Esto es útil para optimizar el uso de memoria y mejorar el rendimiento en ciertas operaciones.
+
+Estas mejoras en C# 12 están diseñadas para facilitar el desarrollo, haciéndolo más eficiente y menos propenso a errores,
+brindando a los desarrolladores herramientas más poderosas para construir aplicaciones.
+
+## como es el desarrollo nativo de la nube con NET.8
+El desarrollo nativo de la nube con .NET 8 se centra en construir aplicaciones que aprovechan las capacidades del entorno
+de la nube. A continuación, se explican los aspectos clave de este enfoque:
+
+Pilares Fundamentales: .NET 8 implementa los pilares de la nube nativa, que incluye:
+
+Observabilidad: Permite monitorear y obtener insights sobre el rendimiento y comportamiento de la aplicación.
+Resiliencia: Asegura que las aplicaciones se mantengan operativas incluso bajo cargas de trabajo elevadas, utilizando 
+
+paquetes como la extensión de resiliencia y salud.
+Escalabilidad: Facilita la adaptación a la demanda, permitiendo que las aplicaciones crezcan y se mantengan eficientes.
+
+Manejabilidad: Simplifica la gestión y el mantenimiento a lo largo del ciclo de vida de la aplicación.
+Herramientas y Paquetes: .NET 8 proporciona un conjunto de herramientas y paquetes NuGet diseñados específicamente para abordar
+preocupaciones relacionadas con la nube, como los paquetes de telemetría para la observabilidad y pruebas para asegurar la
+calidad y estabilidad de las aplicaciones.
+
+Integración con Tecnologías: .NET 8 incluye soporte para OpenTelemetry, así como la capacidad de integrarse con herramientas
+como Prometheus y Grafana, lo que permite crear dashboards y alertas para supervisar la salud y el rendimiento de las aplicaciones.
+
+Stack Cloud Native: Lo que se refiere como "naive" en el contexto de .NET 8, se refiere a un conjunto de herramientas y prácticas
+que permiten a los desarrolladores construir aplicaciones distribuidas, observables y listas para producción que pueden ser fácilmente 
+monitoreadas y mantenidas.
+
+Seguridad y Conectividad: Nuevas funcionalidades como el soporte de proxy HTTPS aseguran comunicaciones encriptadas, mejorando
+la privacidad y la seguridad de las aplicaciones.
+
+En resumen, el desarrollo nativo de la nube con .NET 8 es un enfoque que integra varias nuevas características y herramientas,
+permitiendo a los desarrolladores crear y administrar aplicaciones robustas y escalables en la nube.
+
+## cual es la nueva mejora de contenerizacion y Docker con imagenes de NET
+
+Con el lanzamiento de .NET 8, se han introducido importantes mejoras en la contenerización y la gestión de imágenes de Docker, 
+destacándose principalmente la implementación de contenedores "chiselled". A continuación se detallan las mejoras clave:
+
+Contenedores Chiselled: Se trata de versiones optimizadas de Ubuntu que incluyen solo los paquetes esenciales necesarios para
+ejecutar aplicaciones .NET. Esto resulta en imágenes más pequeñas con una superficie de ataque reducida, lo que mejora tanto el rendimiento como la seguridad.
+
+Beneficios de Imágenes Más Pequeñas: Las imágenes chiselled ofrecen ventajas significativas como tiempos de carga más rápidos,
+menores requisitos de almacenamiento y despliegues más ágiles. Esto es crucial en entornos donde el ancho de banda y el almacenamiento son limitados.
+
+Imágenes Personalizadas de ASP.NET Core: Con el nuevo enfoque, los desarrolladores pueden crear imágenes de contenedores que se
+ajustan específicamente a sus necesidades de rendimiento a través de la compilación anticipada (AOT). Esto permite una mayor flexibilidad y
+optimización para casos de uso específicos.
+
+Ejecución de Contenedores como Usuarios No Root: .NET 8 también facilita la ejecución de imágenes de contenedores con usuarios no root, 
+que es una práctica recomendada para aumentar la seguridad. Esto aplica no solo a contenedores chiselled, sino a todas las imágenes, 
+mejorando así el cumplimiento de las mejores prácticas de seguridad en la contenedorización.
+
+Estas mejoras en .NET 8 hacen que la contenerización con Docker sea más eficiente y segura, facilitando el desarrollo y la operación de 
+aplicaciones nativas de la nube.
+
+## que es la ingenuidad de contenedores 12
+
+La "ingenuidad de contenedores" en el contexto de .NET 8 se refiere a mejoras significativas en la forma en que se crean y utilizan 
+contenedores para aplicaciones .NET, especialmente cuando se trata de imágenes de contenedores en Docker. Aquí están los puntos clave:
+
+Compilación Anticipada (AOT): Uno de los aspectos más destacados de .NET 8 es la inclusión de la compilación anticipada (AOT), que permite
+compilar aplicaciones .NET en código nativo antes de ejecutarlas. Esto no solo reduce el tamaño de la imagen del contenedor sino que también 
+mejora el rendimiento y el tiempo de inicio de las aplicaciones. En un entorno de contenerización, esto significa imágenes más ligeras y despliegues más rápidos.
+
+Imágenes de Tamaño Reducido: Gracias a AOT, las imágenes de contenedor pueden ser significativamente más pequeñas, lo que resulta en una menor
+utilización de ancho de banda y tiempos de inicio más rápidos. Esto es particularmente útil en escenarios de nube donde la eficiencia es crucial.
+
+Mejoras en Seguridad: .NET 8 también permite ejecutar contenedores como usuarios no root, lo que refuerza la seguridad al reducir la superficie de ataque.
+
+Nuevas Funcionalidades: La versión introduce un nuevo conjunto de paquetes NuGet específicos para mejorar la experiencia de desarrollo nativa en 
+la nube, abordando preocupaciones relacionadas con la observabilidad, resiliencia y escalabilidad.
+
+Estas mejoras en .NET 8 demuestran el compromiso de Microsoft por optimizar .NET como una plataforma líder para aplicaciones contenidas
+y nativas de la nube, facilitando así el desarrollo y la operación de aplicaciones distribuidas.
+
+## que son sentencias de nivel superior de c sharp usos globales y concordancia de patrones 
+
+Las sentencias de nivel superior, los usings globales y la concordancia de patrones son características importantes 
+de C# 12 que simplifican el desarrollo de aplicaciones. Aquí te explico cada uno:
+
+Sentencias de Nivel Superior: Permiten simplificar el punto de entrada de las aplicaciones al permitir que el código 
+se escriba directamente en el nivel superior de un archivo, en vez de dentro de un método Main. Esto hace que el código sea más fácil
+de leer y escribir, ayudando a concentrarse en la lógica principal de la aplicación.
+
+Ejemplo:
+
+using System;
+
+Console.WriteLine("Hola, mundo!");
+
+Usings Globales: Esta funcionalidad permite declarar espacios de nombres que estarán disponibles en todo el 
+proyecto sin necesidad de repetir las sentencias using en cada archivo. Esto reduce el desorden y mejora la mantenibilidad,
+sobre todo en proyectos grandes.
+
+Ejemplo de Sintaxis
+
+global using System;
+
+Concordancia de Patrones: Proporciona una sintaxis más expresiva para comprobar y desestructurar valores en tu código.
+Facilita la escritura de condiciones más legibles y concisas.
+
+Ejemplo: Puedes usar declaraciones de coincidencia que evalúan propiedades de objetos.
+
+if (persona is { Titulo: "Gerente" }) 
+{
+    // Lógica específica para gerentes
+}
+
+Estas características no solo simplifican la codificación en C#, sino que también mejoran la legibilidad y la gestión del código, 
+convirtiéndolas en herramientas valiosas para el desarrollo de microservicios y otras aplicaciones.
+
 
 
 
