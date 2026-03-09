@@ -13,6 +13,7 @@ otro para procesar los pagos
 otro para guardar los pedidos 
 cada uno de esos programas pequeños es un microservicio 
 
+
 ## ARQUITECTURA 
 es la forma en la que se organiza el programa por dentro , no es el codigo como tal, si no como 
 se acomodan todas las partes del programa para que funcionen bien 
