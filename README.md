@@ -543,6 +543,199 @@ permitiendo una gran flexibilidad y escalabilidad en el desarrollo de aplicacion
 <img width="1175" height="486" alt="image" src="https://github.com/user-attachments/assets/0f6af234-8c9b-43b4-bc64-ff719ee0104b" />
 <img width="1118" height="488" alt="image" src="https://github.com/user-attachments/assets/82c56426-76da-463a-b27c-c9cdcd8a86f4" />
 
+luego sale una ventana que dice windows o linux y se coloca la opcion de linux 
+se expande el despliegue y ponemos el perfil de ejecucion de docker 
+se abre el docker y se asegura que la casilla verde aparezca 
+se espera a que visual construya una imagen de docker y ejecute el contenedor en el entorno host Docker 
+en el docker debe aparecer elcontenedor y el puerto empieza por el 32 ya que docker asigna cualquier numero para la aplicacion  
+y el puerto 8080 esta dirigido para el entorno interno de docker 
+https://localhost:32768/todoitems 
+el postman el numero de puerto tuvo que haber cambiado 
+el en docker ya aperece la lista de numeros 
+se copia el numero de puerto y en el postman se cambia el puerto por el que hemos copiado  y metodo get y deben de aparecer la nueva tarea que se ha asignado 
+
+se clona un repositorio 
+se crea un nuevo proyecto (solucion en blanco 
+nombre; eschop-microservices
+location: c:/USERS/pc/source/repos/EShopMicroservices
+solution 
+
+verificar en el explorador de archivos y tambien en el repositorio si se creo correctamente la solucion 
+a la carpeta de eshop-microservices cambiarle el nombre por src 
+en el visual se escribe el comando inicial y elegir el comando  commit all and  syrc  esto hara la sincronizacion de el cambio en el repositorio 
+en el visual la carpeta que esta llamada como solucion la vamos a renombrar como servicios 
+luego se crea una sub carpeta que el nombre sera catalogo 
+en la subcarpeta de ctalogo le damos clic a añadir nuevo proyecto ASP.NET core plantilla de proyecto vacio ( ASP.NET core empty   )
+nombre: catalog.API 
+ruta: c:/users/pc/sources/repos/EShopMicroservices/src/servicios/catalog
+remarcar doker y que el sistema operativo sea linux 
+asi el primer microservicio se ha creado con exito 
+clic derecho y en el explorador de archivos se puede ver la estructura de las carpetas creadas correctamente 
+en el visual nos vamos a la carpeta programa.cs y vamos a simplificar el codigo 
+
+var builder=WebAplication.CreateBuilder(args);
+
+//add servicer to thr container 
+
+var app = builder.Build();
+
+//confugure the HTTP requiest pipeline
+
+app.run();
+
+PUERTOS PARA LOS MICROSERVICIOS 
+MICROSERVICES               LOCAL ENV               DOCKER ENV              DOCKER INSIDE 
+
+catalog                     5000-5050               6000-6060               8080-8081
+basket                      5001-5051               6001-6061               8080-8081
+discount                    5002-5052               6002-6062               8080-8081
+ordering                    5003-5053               6003-6063               8080-8081
+
+en la carpeta de catalog.APi  le damos clic derecho y vamos a propiedades - vamos a el campo que dice general y en debug le damos click a open debug 
+nos sale una ventana y le damos al campo https  nos dirijimos a  APP URL y observamos y ya ajjaja 
+
+luego nos devilvemos y nos dirijimos a la carpeta propiedades  y le damos click al archivo launchSettings.json
+cambiar el puerto de http a 5000 y el de https a 5050 y 5000 verificamos que esten escuchando los puertos en el triagulo verde 
+en el docker file verificamos que los puertos internos sean correctos  y luego cambiamos la ventana de ejcucion y poner docker
+
+ENDPOINTS de catalogo de los microservicios 
+
+METODO          REQUEST URL         CASOS DE USO 
+get             /products           list all products 
+get             /products/{id}      fetch a specific product 
+get             /products/category  get products by category 
+post            /product            create a new product 
+put             /products/{id}      update a product 
+delete          /product/{id}       remove a product 
+
+
+en el visual nos dirijimos a la carpeta caltog y le damos click a la api de catalog, le damos clik derecho y le agregamos una carpeta , le ponemos de nombre modulos 
+le añadimos un nuevo item a esa carpeta y al item le vamos a poner product.cs
+
+nos hubicamos en el item y vamos a crear esta estructura  para la creacion de entidades de dominio 
+
+namespace  Catalog.API.Models;
+
+public class product 
+{
+public giud  Id {get; set; }
+public string Name {get; set; } = default!; 
+public list<string> category {get; set; } =  neww();
+public string description {get; set; } default!; 
+public string ImageFile {get; set; } = defautl!; 
+public decimal price {get; set; }
+}
+
+en el visual nos dirijimos a la carpeta API de la carpeta del catlogo y le damos click derecho para crear nueva carpeta y el nombre sera productos 
+en la carpeta productos creamos una sub carpeta  y la nombramos como createProduct
+en la carpeta create producto vamos a agregar un item que se llame CreateProductHandler.cs
+en la carpeta createproducto vamos a colocar otro item que se llame createProductEndpoint.cs 
+
+en visual nos dirijimos a la carpeta createProduct y en el item createProductHandler.cs
+y ponemos este codigo
+
+  namespace Catalog.API.Products.CreatProduct;
+
+  public record createProductCommand(string name , list<string> category, string description, string ImageFile, decimal price );
+  public record  CreateProductResult(Guid Id );
+  public record CreateProductCommandHandler
+{
+}
+
+
+en la API del catalogo le damos click derecho para crear paquete nuget 
+en la ventana de paquete nuget  en el buscador ponemos MediatR y lo instalamos y verificamos que se instale correctamente 
+ luego nos devolvemos a la carpeta de crateProducts y nos dirijimos a el archivo CreateProductHandler.cs 
+
+
+  namespace Catalog.API.Products.CreatProduct;
+
+  public record createProductCommand(string name , list<string> category, string description, string ImageFile, decimal price )
+  :IRequest<createProductResult>;
+  public record  CreateProductResult(Guid Id );
+  public record CreateProductCommandHandler
+  internal class CreateProductCommandHandler : IRequestHandler<createProductCommand, CreateProductResult>
+{
+}
+
+click enter para que implemente los miembros de la interfaz 
+
+en el visual studio nos dirijimos a la carpeta llamada solucion y añadir una nueva capeta de solucion y el nombre sera buildingBlocks
+en la carpeta buildingBlocks  añadiremos un nuevo proyecto que se llama class library 
+nombre:buildingBlocks 
+location c:/users/Pc/source/repos/EShopMicroservices/src/buildingBlocks
+se va a crear una clase y la eliminamos 
+
+en el visual en la carpeta buildingBlocks le damis click al iten buildingBlocks y le damos en gestionar paquetes nuget 
+en el buscador ponemos mediatR y lo instalamos 
+verificamos que se instale correctamente y debajo del item cramos una carpeta y lo nombramos CQRS
+en la carpeta CQRS vamos a agregar un nuevo item que se va a llamar Icommand.cs 
+
+codigo
+
+using MediatR;
+namespace buildingBlocks.CQRS;
+
+public interface Icommand : Icommand<unit>
+{
+}
+
+public  interface Icommand<out Tresponse> : IRequest<TResponse>
+}
+}
+
+
+en la carpeta de CQRS  creamos un item que se llame IQuery.cs
+
+codigo
+using MediatR;
+
+namespace  buildingBlocks.CQRS;
+
+public interface IQuery<out TResponse> : IRequest<TResponse>
+where TResponse : notnull 
+{
+}
+
+en la carpeta CQRS y creamos un nuevo item que se llame ICommmandHandler.cs
+
+using MediatR;
+namespace BUildingBlocks.CQRS;
+
+public interface ICommandHandler<in TCommand>
+: ICommandHandler<Tcommand, unit>
+where Tcomand : ICommand<unit>
+  {
+  }
+
+  public interface ICommandHandler<in TCommand, TResponse>
+  :IRequetHandler<TCommand, TResponse>
+  where TCommand : ICommand<TResponse>
+where TResponse: notnull
+{
+}
+
+en el visual en la carpeta  CQRS crea un nuevo item que se llame IQueryHandler.cs
+codigo 
+
+using mediatR;
+namespace BuildingBlocks.CQRS;
+
+public interface IQueryHandler<in TQuery, TResponse>
+: IRequestHandler<TQuery, TResponse>
+where TQuery : IQuery<TResponse>
+where TResponse :
+{
+}
+
+  en la carpeta catalogo en el item catalog.API eliminamos la linea de codigo <packagueReference> eso es para evitar conflictos Y asegurarse de que todos los paquetes relacionados con el mediador proceden de los building blocks 
+  en la carpeta catalogo de damos click a el campo que dice dependencias y   y le damos en agregar proyecto de referencia 
+  luego sale una ventana y marcamos la casilla que aparece y le damos en aceptar 
+
+  luego en la carpeta de catalogo le damos click a la api del catalogo le damos click derecho y le damos en build 
+  nos dirijimos a la carpeta de producto y le damos click a el item que se llama CreateProductoHandler.cs
+    
+
 
 
 
