@@ -734,10 +734,56 @@ where TResponse :
 
   luego en la carpeta de catalogo le damos click a la api del catalogo le damos click derecho y le damos en build 
   nos dirijimos a la carpeta de producto y le damos click a el item que se llama CreateProductoHandler.cs
-    
 
 
+  using BuildingBlocks.CQRS;
+  using MediatR;
+  
+ namespace Catalog.API.Products.CreatProduct;
 
+  public record createProductCommand(string name , list<string> category, string description, string ImageFile, decimal price )
+  : I command <CreateProductResult>;
+  
+  public record  CreateProductResult(Guid Id );
+  
+  internal class CreateProductCommandHandler
+  :IcommandHandler<createProductCommand, createProductResult>
+{
+
+public async Task<CreateProductResult>handle(CreateProductCommand command cancellation   
+{
+//create product  entity from command object 
+//save to database 
+//return CreateProductResult result
+
+var product = new preoduct
+{
+name=command 
+category = command.category,
+Description =  command.Description,
+ImageFile =Command.ImageFile,
+price =commmand.Price
+};
+
+return new CreateProductResult(Guid NewGuid());
+
+
+}
+}
+
+
+en visual nos dirijimos a la carpeta createProduct y en le damos click al item CreateProductEndpoint.cs
+codigo 
+
+namespace Catalog.API.Products.CreateProducts;
+
+public record  createProductRequest((string name , list<string> category, string description, string ImageFile, decimal price )
+
+public record CreateProductResponse(Guid Id);
+
+public class CreateProductEndpoint
+{
+}
 
 
 
