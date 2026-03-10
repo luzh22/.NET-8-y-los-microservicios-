@@ -787,7 +787,54 @@ public class CreateProductEndpoint
 }
 
 
-
+TEMAS :
+--se aprenden patrones de arquitectura de microservicios 
+--se aprende el flujo del curso y la forma de aprender el desarrollo de los microservicios 
+--se aprende que son los microservios y como funcionan de  como un equipo puede actualizar el microservicio existente sin tener que reconstruir  y volver a desplegar toda --la aplicacion 
+--se explica el microservicio de arquitectura y que se compone de una suite de pequeños microservicios independientes, cada uno ejecutandose en su propio proceso 
+--se explican las caracteristicas de microservicios que hacen que la arquitectura de los microservicios sea una solucion escalable y agil para el desarrollo de aplicaciones complejas en un entorno moderno 
+--se explica los beneficios de la arquitectura de los microservicios que ofrecen una forma de desarrollar aplicaciones que son mas rapidas de construir mas simples de mantener y mas faciles de escalar 
+--se da a conocer distintos retos y desventajas de la arquitetura de los microservicios que deben considerar 
+--se explica cuando utilizar la arquitectura de microservicios y cuales son las mejores practricas de la arquitectura 
+--se explica cuando no utilizar la arquitectura de microservicios la cual no son adaptadas a ciertas circunstancias para evitar errores y tomar la mejor decision sobre adoptar o no la arquitectura de microservicios 
+--comparan los microservicios y la arquitectura monolitica mostrando sus ventajas y desventajas de cada una 
+--se explican los patrones de servicio de la arquitectura de los microservicios ya que son patrones fundamentales para construir y gestionar una arquitectura de microservicios efectiva 
+--se comprende el dominio del comercio electronico con los casos de uso y se sentra en los requisitos funcionales 
+--se explica por que se utiliza NET y sus ventajas tambien da a conocer que es naive en c#12
+--se aprende el desarrollo nativo de la nube con net 8
+--en el video se aprende una nueva mejora contenederizacion y doker con imagenes de NET 
+--en el video se explican novedades del NET 8 
+--se aprende que es la ingenuidad en constructores 12
+--se aprenden sentencias de nivel superior  de c sharp usos globales y concordancia de patrones 
+--se explica ASP.Net 8 para el desarrollo de microservicios ,proporciona las herramientas y caracteristicas para construir aplicaciones de microservicios eficientes y modernas 
+--explica las APIs minimas en ASP.Net core que ofrecen un metodo simplificado para construir APIs en HTTP  de manera rapida y eficiente 
+--explica como crear ASP.Net para microservicios individuales 
+--esplica como despéjar el proyecto para los microservicios indivduales y configurar un ASP minimo.Net para un codigo minimo 
+--explica como crear una aplicacion sencilla TODO utilizando el entorno ASP.Net 
+--explica como probar el proyecto web API de todo con peticones http entrantes para acomodar los endpoints de crud 
+--explica como contenerizar y orquestar microservicios utilizando Docker y Docker compuse 
+--explica como containerizar el proyecto de API web usando Docker 
+--explica como containerizar para hacer un proyecto de API web y ejecutar el perfil Docker 
+--explica como desarrollar el primer microservicio, que es API catolica con arquitectura vertical slice y six 
+--se explica como crear un repositorio para cada microservicio en git hub vinculando el visual studio 
+--se explica como clonar el rpositorio de cada uno de los microservicios en visual studio 2022
+--se explica como crear el primer microservicio, que es la API  de catalogo, ASP.Net 
+--explica los numeros de puerto para cada microservicio de catalogo modificado la configuracion de lanzamiento 
+--se hace un analisis tecnico de los microservicios de catalogo, se explora el analisis tecnico en cuatro claves : se trata de la arquitectura  de la aplicacion, las bibliotecas de estilos, patrones y principios, los paquetes nuGet y la estructura 
+--explica la tecnica de corte vertical por jaime bogaerts y lo que ofrece esa arquitectura frente a dos enfoques tradicionales de arquitectura limpia de cebolla en capas y su objetivo 
+--se compara la arquitectura de corte vertical  frente a la arquitectura limpia 
+--explica seis patrones de diseño que es el patron de segregacion de responsabilidad de consulta de comandos 
+--se explica de como implementar la logica y fisica de los secretos  que pueden aplicarsen a dos formas principales que se trata de la aplicacion logica y fisica
+--se explica los seis patrones  de diseño con la libreria mediador , lo que significa que seremos  implementacion de secuencia logica utilizando la biblioteca de mediador 
+--empieza a desarrollar microservicios de API catalogo con la creacion de entidades de dominio en la carpeta de modulos 
+--explica como desarrollar carpetas de caracteristicas de corte vertical con circulos y mediador 
+--explica como desarrollar la clase feacture handler con six y mediador
+--explica como crear una abstraccion en mediador para el patron de diseño de valores 
+--sigue explicando de como crear abstracciones en mediador para secuencia 
+--explica como implementar seis abstracciones de interfaz de comandos en las rebanadas verticales 
+--explica como desarrollar clase de punto final del producto en el uso de las APIS minimas y carter 
+--explica como se desarrollar http post endpoint con el uso de carter con la implementacion de modulo I
+--
 
 
 
