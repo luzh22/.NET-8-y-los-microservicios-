@@ -1,8 +1,8 @@
-## L:1 ##
-net 8 microservices : DDD, CQRS, vertical / clean architecture
+ L:1 
+# net 8 microservices : DDD, CQRS, vertical / clean architecture #
 
 ## PRIMERO TOCA EMPEZAR CON CONSEPTOS BASICOS  ##
-## le toco leer hermano jaajaa entre mas texto mejorrrr lo voy a torturar
+> le toco leer hermano jaajaa entre mas texto mejorrrr lo voy a torturar
 
 ¿que es un microservicio?
 es una forma de construir un programa grande usando muchos programas pequeños 
@@ -42,7 +42,7 @@ en NET.8 hay muchas bibliotecas que ayudan a ; conectarse a base de datos, crear
 son formas recomendadas para programar que elcodigo quede bien echo 
 
 
-## yo vere que si este leyendo por que le voy a hacer evaluacion 
+> yo vere que si este leyendo por que le voy a hacer evaluacion 
 
 ## patrones de arquitectura de los microservicios 
 son formas recomendadas de organizar y hacer  funcionar los microservicios dentro de una aplicacion
@@ -131,7 +131,7 @@ Si un microservicio falla, los otros pueden seguir funcionando, minimizando el i
 estos ofrecen una forma de de desarrolllar aplicaciones que son mas rapidas de construir mas siples 
 de manteener y faciles de escalar 
 
-## si esta leyendo o le pegooooo 
+> si esta leyendo o le pegooooo 
 
 ## cuales son los distintos retos y desventajas de la arquitectura de los micoservicios que se deben considerar
 
@@ -772,7 +772,7 @@ return new CreateProductResult(Guid NewGuid());
 }
 }
 
-
+´´´
 en visual nos dirijimos a la carpeta createProduct y en le damos click al item CreateProductEndpoint.cs
 codigo 
 
