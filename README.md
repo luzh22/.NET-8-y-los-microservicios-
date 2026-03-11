@@ -837,6 +837,13 @@ TEMAS :
 47.explica como implementar un POST request en http con slash products endpoint para crear productos en el catalogo
 48.explica como registrar las bibliotecas mediador y carter en Asp.Net  Dependency  Injeccion Service y Request Pipeline 
 49.explica como probar la API de catalogo con el envio de crear producto en http post request 
+50.Explica como desarrollar el manejador  de la infraestructura API catalogo y los clusteres de puntos finales para realizaer operaciones CRUD 
+51.se exploran la integracion de servicios de base de datos con los microservicios 
+52.explica como abrir sesiones en Martin como base de datos de documentos 
+53.  como desarrollar una clase mejorada de comandos para operaciones de base de datos usando la libreria maten
+54.explica como registrar y configurar Martin  Document DataBase en program.cs
+55.se aprende  la estrategia de despliegue de nuestros microservicios de comercio electronico, centrandose especialmente en la base de datos PostgreSQL mediante Docker compose  
+56.explica como configurar la base de datos PostgreSQL utilizando el archivo Docker compose para el entorno Docker multicontenedor 
 
 
 
