@@ -1,5 +1,8 @@
  L:1 
 # net 8 microservices : DDD, CQRS, vertical / clean architecture #
+esto es lo que voy del procesodime si esta bien o mal 
+<img width="1772" height="647" alt="image" src="https://github.com/user-attachments/assets/ef6ae18f-e1f5-4d95-9197-c9444d4b8a99" />
+
 
 ## PRIMERO TOCA EMPEZAR CON CONSEPTOS BASICOS  ##
 > le toco leer hermano jaajaa entre mas texto mejorrrr lo voy a torturar
